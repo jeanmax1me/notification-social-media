@@ -1,0 +1,32 @@
+header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 26px;
+    margin-top: 24px;
+  }
+  
+  header h1, span {
+    margin-right: 1rem;
+  }
+  
+  a {
+    margin-left: auto;
+  }
+  
+
+.container__comments {
+display: flex;
+flex-direction: column;
+gap: 14px;
+}
+
+.comment--rightAvatar {
+    float: right;
+    max-width: 38px;
+    height: auto;
+}
+
+.comment--avatar {
+    max-width: 38px;
+    height: auto;
+}

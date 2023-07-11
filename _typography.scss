@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'PlusJakartaSans';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../assets/fonts/PlusJakartaSans-VariableFont_wght.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'PlusJakartaSans';
+    font-weight: 800;
+    font-style: normal;
+    src: url('../assets/fonts/static/PlusJakartaSans-ExtraBold.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'PlusJakartaSans';
+    font-weight: 500;
+    font-style: normal;
+    src: url('../assets/fonts/static/PlusJakartaSans-Medium.ttf') format('truetype');
+  }
+  
+  body {
+    font-family: 'PlusJakartaSans', Arial, sans-serif;
+    font-size: 16px;
+  }
+  
+  h1 {
+    font-size: 1.35rem;
+  }
+
+  header a {
+    color: $grayish-blue;
+    text-decoration: none;
+  }
+
+  .comment--author {
+    font-weight: bold;
+  }
