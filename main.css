@@ -87,10 +87,35 @@ header a {
   font-weight: bold;
 }
 
+.comment--date {
+  color: hsl(219, 14%, 63%);
+  font-size: 1rem;
+}
+
+.comment--text {
+  color: hsl(219, 12%, 42%);
+  size: 0.9rem;
+}
+
+.comment--postReaction, .comment--group {
+  color: hsl(219, 12%, 42%);
+  font-weight: bold;
+}
+
 body {
   margin-left: 16px;
   margin-right: 16px;
   margin-top: 7px;
+  max-width: 732px;
+}
+
+.notification--count {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(219, 85%, 26%);
+  min-width: 32px;
+  min-height: 24px;
+  text-align: center;
+  border-radius: 6px;
 }
 
 header {
@@ -100,7 +125,8 @@ header {
   margin-top: 24px;
 }
 
-header h1, span {
+header h1,
+span {
   margin-right: 1rem;
 }
 
@@ -115,16 +141,80 @@ a {
 }
 
 .comment--rightAvatar {
-  float: right;
-  max-width: 38px;
+  width: 38px;
   height: auto;
+  position: relative;
+  float: right;
+}
+
+.sm-width {
+  max-width: 40%;
 }
 
 .comment--avatar {
-  max-width: 38px;
+  width: 40px;
   height: auto;
 }
 
 .comment--container {
+  display: flex;
+  flex-direction: row;
+  border-radius: 5px;
+}
+
+.comment--imgcontainer {
+  height: auto;
+  width: 40px;
+  margin-top: 16px;
+  margin-left: 16px;
+}
+
+.comment--content {
+  margin-top: 18px;
+  width: 100%;
+  padding-left: 15px;
+}
+
+.comment--date {
+  display: block;
+  padding-bottom: 16px;
+}
+
+.comment--nested {
+  border: 2px solid hsl(211, 68%, 94%);
+  border-radius: 5px;
+  margin-left: 73px;
+  padding-left: 15px;
+  padding-right: 20px;
+}
+
+.comment--text, .comment--postReaction, .comment--group {
+  margin-left: -10px;
+}
+
+.comment--container {
   background-color: hsl(210, 60%, 98%);
+}
+
+.comment--container:nth-child(n+4) {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.comment--author:hover, .comment--postReaction:hover, .comment--group:hover {
+  transition: hsl(219, 85%, 26%) 0.3s;
+  color: hsl(219, 85%, 26%);
+}
+
+.notif {
+  display: inline-block;
+  background: hsl(1, 90%, 64%);
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+}
+
+.comment--nested:hover {
+  color: white;
+  background-color: hsl(219, 85%, 26%);
+  transition: 0.3s;
 }/*# sourceMappingURL=main.css.map */

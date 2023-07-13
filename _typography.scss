@@ -36,3 +36,19 @@
   .comment--author {
     font-weight: bold;
   }
+
+  .comment--date {
+    color: $grayish-blue;
+    font-size: 1rem;
+  }
+
+  .comment--text {
+    color: $dark-grayish-blue;
+    size: 0.9rem;
+  }
+
+  .comment--postReaction, .comment--group {
+    color: $dark-grayish-blue;
+    font-weight: bold;
+  }
+  

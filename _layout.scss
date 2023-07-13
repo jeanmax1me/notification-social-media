@@ -1,32 +1,80 @@
 header {
-    display: flex;
-    align-items: center;
-    margin-bottom: 26px;
-    margin-top: 24px;
-  }
-  
-  header h1, span {
-    margin-right: 1rem;
-  }
-  
-  a {
-    margin-left: auto;
-  }
-  
+  display: flex;
+  align-items: center;
+  margin-bottom: 26px;
+  margin-top: 24px;
+}
+
+header h1,
+span {
+  margin-right: 1rem;
+}
+
+a {
+  margin-left: auto;
+}
 
 .container__comments {
-display: flex;
-flex-direction: column;
-gap: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+
 }
 
 .comment--rightAvatar {
-    float: right;
-    max-width: 38px;
-    height: auto;
+  width: 38px;
+  height: auto;
+  position: relative;
+  float: right;
 }
 
+.sm-width {
+  max-width: 40%;
+}
+
+
 .comment--avatar {
-    max-width: 38px;
-    height: auto;
+  width: 40px;
+  height: auto;
+ 
+}
+
+.comment--container {
+  display: flex;
+  flex-direction: row;
+  border-radius: 5px;
+ 
+}
+
+.comment--imgcontainer {
+  height: auto;
+  width: 40px;
+  margin-top: 16px;
+  margin-left: 16px;
+
+}
+
+.comment--content {
+  margin-top: 18px;
+
+  width: 100%;
+  padding-left: 15px;
+}
+
+.comment--date {
+  display: block;
+
+  padding-bottom: 16px;
+}
+
+.comment--nested {
+  border: 2px solid $light-gray-1;
+  border-radius: 5px;
+  margin-left: 73px;
+  padding-left: 15px;
+  padding-right: 20px;
+}
+
+.comment--text, .comment--postReaction, .comment--group {
+  margin-left: -10px;
 }

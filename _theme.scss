@@ -1,3 +1,25 @@
 .comment--container {
     background-color: $very-light-gray;
 }
+.comment--container:nth-child(n+4) {
+background-color: $white;
+}
+
+
+.comment--author:hover, .comment--postReaction:hover, .comment--group:hover {
+    transition: $primary-blue 0.3s;
+    color: $primary-blue;
+}
+.notif {
+    display: inline-block;
+    background: $primary-red;
+    width: .5rem;
+    height: .5rem;
+    border-radius: 50%;
+}
+
+.comment--nested:hover {
+    color: white;
+    background-color: $primary-blue;
+    transition: 0.3s;
+}

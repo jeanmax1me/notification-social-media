@@ -2,4 +2,14 @@ body {
     margin-left: 16px;
     margin-right: 16px;
     margin-top: 7px;
+    max-width: 732px;
+}
+
+.notification--count {
+    color: $white;
+    background-color: $primary-blue;
+    min-width: 32px;
+    min-height: 24px;
+    text-align: center;
+    border-radius: 6px;
 }
